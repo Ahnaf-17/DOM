@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>DOM </title>
+</head>
+<body>  
+    <header>
+<h1>welcome to dom</h1>
+    </header>
+    <main>
+        <h1>starting of dom</h1>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
+    </main>
+    
+    <script src="js/dom.js"></script>
+    <script>
+       const liCollection = document.getElementsByTagName("li");
+    //    console.log(liCollection);
+    for(const li of liCollection){
+        console.log(li);
+    }
+    </script>
+</body>
+</html>
