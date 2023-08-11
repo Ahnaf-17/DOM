@@ -8,16 +8,37 @@
 </head>
 <body>  
     <header>
-<h1>welcome to dom</h1>
+        <h1>welcome to dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut possimus odio dicta maxime id, provident, laborum sed repudiandae earum expedita eum eveniet debitis. Pariatur explicabo quis, molestias obcaecati laboriosam voluptates?</p>
     </header>
     <main>
-        <h1>starting of dom</h1>
+        <section>
+            <h1>starting of dom</h1>
         <ul>
             <li>one</li>
             <li>two</li>
             <li>three</li>
             <li>four</li>
         </ul>
+        </section>
+        <section class="second-container">
+            <h1 id="second-title">second</h1>
+        <ul>
+            <li>2.one</li>
+            <li>2.two</li>
+            <li>2.three</li>
+            <li>2.four</li>
+        </ul>
+        </section>
+        <section >
+            <h1 id="third-title">third</h1>
+        <ul>
+            <li class="unique">3.one</li>
+            <li class="unique">3.two</li>
+            <li class="unique">3.three</li>
+            <li class="unique">3.four</li>
+        </ul>
+        </section>
     </main>
     
     <script src="js/dom.js"></script>
@@ -25,7 +46,17 @@
        const liCollection = document.getElementsByTagName("li");
     //    console.log(liCollection);
     for(const li of liCollection){
-        console.log(li);
+        // console.log(li);
+    }
+
+    const sec = document.getElementsByClassName('unique');
+    for(const change of sec){
+        // console.log(change.innerText);
+    }
+
+    const container = document.querySelectorAll(".second-container li");
+    for(const li of container){
+        console.log(li)
     }
     </script>
 </body>
