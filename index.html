@@ -12,7 +12,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut possimus odio dicta maxime id, provident, laborum sed repudiandae earum expedita eum eveniet debitis. Pariatur explicabo quis, molestias obcaecati laboriosam voluptates?</p>
     </header>
     <main>
-        <section>
+        <section id="start">
             <h1>starting of dom</h1>
         <ul>
             <li>one</li>
@@ -32,7 +32,7 @@
         </section>
         <section >
             <h1 id="third-title">third</h1>
-        <ul>
+        <ul id="third-list">
             <li class="unique">3.one</li>
             <li class="unique">3.two</li>
             <li class="unique">3.three</li>
@@ -42,6 +42,8 @@
     </main>
     
     <script src="js/dom.js"></script>
+    <script src="js/jsStyle.js"></script>
+    <script src="js/append.js"></script>
     <script>
        const liCollection = document.getElementsByTagName("li");
     //    console.log(liCollection);
@@ -56,7 +58,7 @@
 
     const container = document.querySelectorAll(".second-container li");
     for(const li of container){
-        console.log(li)
+        // console.log(li)
     }
     </script>
 </body>
